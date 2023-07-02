@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        /* Static Position */
+        .static-element {
+            position: static;
+            /* Default position */
+        }
+
+        /* Relative Position */
+        .relative-element {
+            position: relative;
+            /* Position relative to its normal position */
+            top: 20px;
+            /* Move the element 20 pixels down from its normal position */
+            left: 30px;
+            /* Move the element 30 pixels to the right from its normal position */
+        }
+
+        /* Absolute Position */
+        .absolute-element {
+            position: absolute;
+            /* Position relative to its nearest positioned ancestor */
+            top: 50px;
+            /* Position the element 50 pixels from the top of the nearest positioned ancestor */
+            left: 100px;
+            /* Position the element 100 pixels from the left of the nearest positioned ancestor */
+        }
+
+        /* Fixed Position */
+        .fixed-element {
+            position: fixed;
+            /* Position relative to the browser window */
+            top: 10px;
+            /* Position the element 10 pixels from the top of the browser window */
+            right: 10px;
+            /* Position the element 10 pixels from the right of the browser window */
+        }
+
+        /* Sticky Position */
+        .sticky-element {
+            position: sticky;
+            /* Position as relative until the threshold is reached, then becomes fixed */
+            top: 50px;
+            /* Position the element 50 pixels from the top of its containing block */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Static Position -->
+    <div class="static-element">Static Element</div>
+
+    <!-- Relative Position -->
+    <div class="relative-element">Relative Element</div>
+
+    <!-- Absolute Position -->
+    <div class="absolute-element">Absolute Element</div>
+
+    <!-- Fixed Position -->
+    <div class="fixed-element">Fixed Element</div>
+
+    <!-- Sticky Position -->
+    <div class="sticky-element">Sticky Element</div>
+</body>
+
+</html>
